@@ -1,0 +1,18 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="InitialController?action=pagina_inicial">Site E-Commerce</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <div class="row" style="padding-top: 10px;">
+                <a href="InitialController?action=login" class="btn btn-sm btn-success active navbar-right" role="button">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
