@@ -1,0 +1,22 @@
+algoritmo "micro08"
+
+var
+	numero: inteiro;
+inicio
+
+	numero <- 1;
+
+	enquanto numero <> 0 faca
+		
+		escreva("Digite um número: ");
+		leia(numero);
+		
+		se (numero > 10) entao
+			escreval("O número ",numero," é maior que 10");
+		senao
+			escreval("O número ",numero," é menor que 10");
+
+		fimse
+	fimenquanto
+fimalgoritmo
+

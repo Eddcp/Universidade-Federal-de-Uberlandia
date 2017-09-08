@@ -1,0 +1,6 @@
+algoritmo "nano04"
+var
+	n : inteiro
+inicio
+	n <- 1 + 2
+fimalgoritmo

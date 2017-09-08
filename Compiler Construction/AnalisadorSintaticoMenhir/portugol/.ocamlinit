@@ -1,0 +1,4 @@
+#load "parser.cmo";;
+#load "lexer.cmo";;
+#use "main.ml";;
+open Ast;;

@@ -1,0 +1,10 @@
+algoritmo "nano07"
+
+var
+	n : inteiro
+inicio
+	n <- 1
+	se n = 1 entao
+		escreva(n)
+	fimse
+fimalgoritmo

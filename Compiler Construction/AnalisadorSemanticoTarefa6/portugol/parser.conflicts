@@ -1,0 +1,31 @@
+
+** Conflict (shift/reduce) in state 94.
+** Tokens involved: XOU SUB SOMA POTENCIA OU MULT MOD MENORIGUAL MENOR MAIORIGUAL MAIOR IGUAL E DIVISAO DIFERENTE
+** The following explanations concentrate on token XOU.
+** This state is reached from prog after reading:
+
+declaracao_algoritmo option(var_decl_block) list(func_decl) INICIO SE NAO expr 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+prog 
+declaracao_algoritmo option(var_decl_block) list(func_decl) stm_block EOF 
+                                                            INICIO list(stm_list) FIMALGORITMO 
+                                                                   stm_list list(stm_list) 
+                                                                   stm_se 
+                                                                   SE expr ENTAO list(stm_list) option(stm_senao) FIMSE 
+                                                                      (?)
+
+** In state 94, looking ahead at XOU, shifting is permitted
+** because of the following sub-derivation:
+
+NAO expr 
+    expr . XOU expr 
+
+** In state 94, looking ahead at XOU, reducing production
+** expr -> NAO expr 
+** is permitted because of the following sub-derivation:
+
+expr XOU expr // lookahead token appears
+NAO expr . 

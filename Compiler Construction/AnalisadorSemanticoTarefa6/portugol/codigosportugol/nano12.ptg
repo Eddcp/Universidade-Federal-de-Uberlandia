@@ -1,0 +1,22 @@
+algoritmo "nano12"
+
+var
+	n, m, x : inteiro;
+inicio
+
+	n <- 1;
+
+	m <- 2;
+
+	x <- 5;
+
+	enquanto x > n faca
+		se n = m entao
+			escreva(n);
+		senao
+			escreva(0);
+		fimse
+		x <- x - 1;
+	fimenquanto
+
+fimalgoritmo

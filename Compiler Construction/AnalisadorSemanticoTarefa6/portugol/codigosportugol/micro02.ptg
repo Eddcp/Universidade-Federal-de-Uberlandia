@@ -1,0 +1,22 @@
+algoritmo "micro02"
+
+{ Função : Escrever um algoritmo que leia dois valores inteiro
+
+distintos e informe qual e o maior.
+
+}
+
+var
+	num1, num2: inteiro;
+inicio
+
+	escreva("Digite o primeiro numero: ");
+	leia(num1);
+	escreva("Digite o segundo numero: ");
+	leia(num2);
+	se num1 > num2 entao
+		escreva("O primeiro numero ",num1," e maior que o segundo",num2);
+	senao
+		escreva("O segundo numero",num2," e maior que o primeiro",num1);
+	fimse
+fimalgoritmo

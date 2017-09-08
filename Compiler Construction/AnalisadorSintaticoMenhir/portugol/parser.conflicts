@@ -1,0 +1,34 @@
+
+** Conflict (shift/reduce) in state 103.
+** Token involved: ID
+** This state is reached from prog after reading:
+
+declaracao_algoritmo option(var_decl_block) list(func_decl) INICIO RETORNE 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+prog 
+declaracao_algoritmo option(var_decl_block) list(func_decl) stm_block EOF 
+                                                            INICIO list(stm_list) FIMALGORITMO 
+                                                                   (?)
+
+** In state 103, looking ahead at ID, shifting is permitted
+** because of the following sub-derivation:
+
+stm_list list(stm_list) 
+stm_ret 
+RETORNE option(expr) 
+        expr 
+        termo 
+        fcall 
+        . ID APAR option(fargs) FPAR 
+
+** In state 103, looking ahead at ID, reducing production
+** option(expr) -> 
+** is permitted because of the following sub-derivation:
+
+stm_list list(stm_list) // lookahead token appears because list(stm_list) can begin with ID
+stm_ret // lookahead token is inherited
+RETORNE option(expr) // lookahead token is inherited
+        . 

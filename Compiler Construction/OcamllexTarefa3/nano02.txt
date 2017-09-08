@@ -1,0 +1,5 @@
+algoritmo "nano02"
+var
+	n : inteiro
+inicio
+fimalgoritmo

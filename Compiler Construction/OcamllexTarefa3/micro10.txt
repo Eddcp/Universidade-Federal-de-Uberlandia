@@ -1,0 +1,30 @@
+algoritmo "micro10"
+
+{ Função : recebe um número e calcula recursivamente o fatorial
+
+desse número.
+
+}
+var
+
+	numero: inteiro
+	fat: inteiro
+inicio
+
+	escreva("Digite um número: ")
+	leia(numero)
+	fat <- fatorial(numero)
+	escreva("O fatorial de ")
+	escreva(numero)
+	escreva(" é ")
+	escreval(fat)
+
+fimalgoritmo
+
+funcao fatorial(n: inteiro) : inteiro
+
+	se n <= 0 entao
+		retorne 1
+	senao
+		retorne n * fatorial(n-1)
+fimfuncao fatorial

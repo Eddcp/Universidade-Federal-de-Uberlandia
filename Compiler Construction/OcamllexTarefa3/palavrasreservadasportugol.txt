@@ -1,0 +1,1 @@
+e  eco  enquanto  entao  escolha  escreva  escreval  faca  falso  fimalgoritmo  fimenquanto  fimescolha  fimfuncao  fimpara  fimprocedimento  fimrepita  fimse  funcao  inicio  int  inteiro  interrompa  leia  limpatela  logico  mod  nao  ou  outrocaso  para  passo  pausa  real       procedimento  repita  retorne  se  senao  timer  var  vetor  verdadeiro  xou

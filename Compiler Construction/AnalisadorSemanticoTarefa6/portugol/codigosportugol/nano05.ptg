@@ -1,0 +1,19 @@
+algoritmo "nano05"
+{
+	blabla
+	bla
+	blab
+	lba
+	slb
+	dla
+	sdlas
+	la
+	ldadlsa
+	ds
+}
+var
+	n : inteiro;
+inicio
+	n <- 2;
+	escreva(n);
+fimalgoritmo

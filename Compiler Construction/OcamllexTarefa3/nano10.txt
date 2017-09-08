@@ -1,0 +1,19 @@
+algoritmo "nano10"
+
+var
+
+	n, m : inteiro
+
+inicio
+
+	n <- 1
+
+	m <- 2
+
+	se n = m entao
+		escreva(n)
+	senao
+		escreva(0)
+	fimse
+
+fimalgoritmo

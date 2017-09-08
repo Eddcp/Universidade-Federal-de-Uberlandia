@@ -1,0 +1,24 @@
+algoritmo "micro09"
+
+var
+	preco, venda, novo_preco: real
+inicio
+
+	escreva("Digite o preço: ")
+	leia(preco)
+	escreva("Digite a venda: ")
+	leia(venda)
+	se (venda < 500) OU (preco < 30)
+	entao novo_preco <- preco + 10/100 * preco
+	senao se (vendas >= 500 E venda < 1200) OU
+			(preco >= 30 E preco < 80)
+		  entao novo_preco <- preco + 15/100 * preco
+		  senao se venda >= 1200 OU preco >= 80
+				entao novo_preco <- preco - 20/100 * preco
+				fimse
+		  fimse
+	fimse
+
+	escreval("O novo preço é ", novo_preco)
+
+fimalgoritmo
