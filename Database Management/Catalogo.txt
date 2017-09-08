@@ -1,0 +1,6 @@
+Faculdade
+aluno
+3
+matricula varchar 15
+nome varchar 30
+idade int 4
