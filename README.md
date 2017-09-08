@@ -1,2 +1,3 @@
-# Universidade-Federal-de-Uberlandia
-College Related
+# College Related Projects
+Projects made during college period.
+
